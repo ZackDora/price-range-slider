@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <div class="card">
+        <div class="card-header">
+            <div>
+                <div class="card-title">Price range</div>
+                <div class="card-subtitle">Filter products by budget</div>
+            </div>
+            <div class="card-subtitle">USD</div>
+        </div>
+
+        <div class="price-display">
+            <div class="pill">
+                <span class="pill-label">Minimum</span>
+                <input 
+                    type="number" 
+                    id="min-price" 
+                    class="pill-value pill-input"
+                    min = "0"
+                    max= "1000"
+                    value="100">            
+            </div>
+            <div class="pill">
+                <span class="pill-label">Maximum</span>
+                <input 
+                    type="number" 
+                    id="max-price" 
+                    class="pill-value pill-input"
+                    min="0"
+                    max="1000"
+                    value="900">    
+            </div>
+        </div>
+
+        <div class="slider-container">
+            <div class="slider-track">
+                <div id="slider-range" class="slider-range"></div>
+            </div>
+
+            <input
+                id="min-range"
+                class="range-input"
+                type="range"
+                min="0"
+                max="1000"
+                value="100"
+                step="10"
+            >
+
+            <input
+                id="max-range"
+                class="range-input"
+                type="range"
+                min="0"
+                max="1000"
+                value="900"
+                step="10"
+            >
+        </div>
+
+        <div class="scale-labels">
+            <span>$0</span>
+            <span>$250</span>
+            <span>$500</span>
+            <span>$750</span>
+            <span>$1000</span>
+        </div>
+
+        <div class="helper-text">
+            Showing items between
+            <span id="summary-min" class="highlight">$100</span>
+            and
+            <span id="summary-max" class="highlight">$900</span>.
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
