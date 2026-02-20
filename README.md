@@ -8,6 +8,10 @@ The project features a price range slider with min and max inputs. The user can 
 
 ![Price Range Slider](./screenshots/pc-web.jpeg)
 
+### Links
+
+- Live Site URL: [https://zackdora.github.io/blog-preview-card-main/](https://zackdora.github.io/price-range-slider/)
+
 ### Built with
 
 - HTML
